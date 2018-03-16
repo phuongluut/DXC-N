@@ -1,0 +1,102 @@
+
+
+        *{
+        font-family: segoe ui light;
+    }
+    .list-ios > .item-block:last-child{
+        height: 5px;
+        background-color: rgba(255, 255, 255, 0.884);
+        // margin-bottom: 1.5px;
+        border-bottom: 0;
+    }
+page-login {
+  .item-ios{
+        margin-bottom: 3px;
+        border-radius: 5px;
+        border-bottom: none;
+  }
+    .tile{
+        margin-top: 0px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 70px;
+        padding-bottom: 30px;
+        color: white;
+        
+    }
+    // .btn{
+    //    border-radius: 5px;
+    // }
+    // ion-input{
+    //   border-radius: 50%;
+    // }
+   
+    .submit-btn{
+        border-radius: 5px;
+    }
+    @keyframes icon {
+    from{transform: rotateX(90deg); transition: 0.4s}
+    to{transform: rotateX(0); transition: 0.4s}
+    
+}
+
+    .icon{
+        animation: icon 2s forwards;
+        // transform: rotatex(90deg);
+        // transition: all 0.5s cubic-bezier(.36,-0.64,.34,1.76);
+        font-size: 100px;
+        margin-bottom: 0.2em;
+        text-align: center;
+    }
+    [col-12]{
+        text-align: center;
+    }
+    .content{
+
+        background-color: rgba(135, 207, 235, 0);
+        z-index: 2;
+        background-repeat:no-repeat;
+        opacity: 0.96; 
+    }
+    .content-back{
+        background-image: url('/assets/imgs/sback1.jpg');
+        z-index:-1; 
+        background-size: cover;
+    }
+    .content-login{
+        z-index: 1;
+
+    }
+    .scroll-content{
+        overflow: hidden;
+        // padding: 0 !important;
+        padding: 5px;
+    }
+    .back-button.show-back-button{
+        display: none;
+    }
+    .icon-user{
+        font-size: 40px;
+        float: left;
+
+
+    }
+    .icon-pass{
+        font-size: 40px;
+        float: left; 
+    }
+    .fb{
+        font-size: 40px;
+        padding: 15px;
+        margin-top: 0;
+        color: #3b5998;
+    }
+    .gg{
+        font-size: 40px;
+        color: 	#d62d20;
+
+    }
+    .content-ios{
+        text-align: center;
+    }
+
+}

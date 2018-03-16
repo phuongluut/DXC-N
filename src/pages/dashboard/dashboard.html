@@ -1,0 +1,48 @@
+<!--
+  Generated template for the DashboardPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content class="content">
+    <ion-card class="card-wallpaper">
+        <div class="info">
+            <img src="/assets/imgs/obama.png" alt="" class="avatar" (click)="retrieveCollection()">
+            <div class="userinfo" *ngFor="let user of users">
+                <h2 class="name"> {{ user.firstname }} {{ user.lastname }} dasdasdasd </h2>
+                <p> {{ user.email }} </p>
+            </div>
+        </div>
+    </ion-card>
+    <!-- end ion-card -->
+
+    <!-- start option -->
+    <div class="option">
+        <ion-grid>
+            <ion-row class="ionrow-list">
+                <ion-col col-12 class="ioncol-list">
+                    <h2 (click)="pushSurvey()" class="assets">
+                        <ion-icon ios="ios-list-outline" md="md-list" class="ioncol-icon"></ion-icon>
+                        My Survey
+                    </h2>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <!-- end option -->
+
+    <ion-row class="ionrow-list">
+        <ion-col col-12 class="ioncol-list">
+            <h2 class="assets" (click)="goLogin()">
+                <ion-icon ios="ios-log-out" md="md-log-out" class="ioncol-icon"></ion-icon>
+                Log out
+            </h2>
+        </ion-col>
+    </ion-row>
+</ion-content>

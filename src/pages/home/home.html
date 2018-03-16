@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title class="title">T-SURVEY</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="addSurvey()">
+        <ion-icon ios="ios-add-circle-outline" md="md-add-circle" class="avatar"></ion-icon>
+      </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="content" padding>
+    <ion-row>
+        <ion-searchbar scroll="no" style="overflow: hidden" class="search" (ionInput)="getItems($event)"></ion-searchbar>
+    </ion-row>
+    <ion-list>
+        <ion-item-sliding *ngFor="let survey of filterItems">
+            <ion-item class="items" (click)="updateSurvey(survey)">
+                <h2>{{ survey.name }}</h2>
+                <p>
+                    Author: {{ survey.email }}
+                </p>
+            </ion-item>
+        </ion-item-sliding>
+    </ion-list>
+</ion-content>

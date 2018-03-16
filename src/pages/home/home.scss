@@ -1,0 +1,52 @@
+ion-app.ios [padding] .scroll-content {
+    padding: 0;
+}
+
+page-home {
+    .row {
+        padding-bottom: 44px;
+    }
+    .searchbar-ios {
+        position: fixed;
+        top: 44px;
+        z-index: 1;
+    }
+    .scroll-content {
+        padding: 0;
+    }
+    .icon-dash {
+        font-size: 30px;
+        float: right;
+        padding-right: 10px;
+        color: white;
+        z-index: 1;
+    }
+    .item-ios {
+        padding: 0;
+    }
+    .searchbar-ios .searchbar-input {
+        border-radius: 0;
+    }
+    .title {
+        background-color: #ff3838;
+        z-index: -1;
+    }
+    .list-ios>.item-block:last-child,
+    .list-ios>.item-wrapper:last-child .item-block {
+        border-bottom: 0;
+    }
+    .bar-button-default-ios,
+    .bar-button-default.bar-button-ios-default,
+    .bar-button-clear-ios-default {
+        color: white;
+    }
+    .content {
+        background-color: white;
+    }
+    .toolbar-title-ios {
+        color: white;
+    }
+    .label-ios {
+        margin-left: 15px;
+    }
+}

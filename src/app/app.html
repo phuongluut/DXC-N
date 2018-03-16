@@ -1,0 +1,47 @@
+<ion-menu [content]="content">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Menu</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="content">
+        <ion-card class="card-wallpaper">
+            <div class="info">
+                <img src="/assets/imgs/obama.png" alt="" class="avatar">
+                <div class="userinfo">
+                    <h2 class="name"> {{ username }} </h2>
+                </div>
+            </div>
+        </ion-card>
+        <!-- end ion-card -->
+
+        <!-- start option -->
+        <div class="option">
+            <ion-grid>
+                <ion-row class="ionrow-list">
+                    <ion-col col-12 class="ioncol-list">
+                        <h2 class="assets">
+                            <ion-icon ios="ios-list-outline" md="md-list" class="ioncol-icon"></ion-icon>
+                            My Survey
+                        </h2>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+        <!-- end option -->
+
+        <ion-row class="ionrow-list">
+            <ion-col col-12 class="ioncol-list">
+                <h2 class="assets" (click)="goLogin()">
+                    <ion-icon menuClose ios="ios-log-out" md="md-log-out" class="ioncol-icon"></ion-icon>
+                    Log out
+                </h2>
+            </ion-col>
+        </ion-row>
+    </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
